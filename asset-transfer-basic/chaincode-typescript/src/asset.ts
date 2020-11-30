@@ -2,25 +2,24 @@
   SPDX-License-Identifier: Apache-2.0
 */
 
-import {Object, Property} from 'fabric-contract-api';
+import { Object, Property } from 'fabric-contract-api';
 
 @Object()
-export class Asset {
-    @Property()
-    public docType?: string;
+export class Accreditation {
 
     @Property()
     public ID: string;
 
     @Property()
-    public Color: string;
+    public Doctor: string;
 
     @Property()
-    public Size: number;
+    public Clinic: string;
 
     @Property()
-    public Owner: string;
+    public Speciality: string;
 
     @Property()
-    public AppraisedValue: number;
+    public Status: string;
 }
+
